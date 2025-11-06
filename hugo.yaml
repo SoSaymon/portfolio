@@ -60,9 +60,10 @@ markup:
 
 params:
   title: "Szymon's Portfolio"
-  description: "A personal portfolio website built with Hugo Profile theme."
+  description: "Applied Data Science student at BUas. Building AI solutions that solve real problems with explainable, production-ready systems."
   # staticPath: ""  # The path to serve the static files from
   favicon: "/fav.png"
+  ogImage: "/images/me.jpg"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
