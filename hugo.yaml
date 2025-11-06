@@ -1,0 +1,375 @@
+baseURL: "https://hugo-profile.netlify.app"
+languageCode: "en-us"
+title: "Szymon's Portfolio"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+enableRobotsTXT: true
+
+#services:
+  #googleAnalytics:
+    #id: G-MEASUREMENT_ID
+  #disqus:
+    #shortname: your-disqus-shortname
+
+pagination:
+  pagerSize: 3
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+# Menus:
+#   main:
+#     # - identifier: blog
+#     #   name: Blog
+#     #   title: Blog posts
+#     #   url: /blogs
+#     #   weight: 1
+#     # - identifier: gallery
+#     #   name: Gallery
+#     #   title: Blog posts
+#     #   url: /gallery
+#     #   weight: 2
+#     #Dropdown menu
+#     # - identifier: dropdown
+#     #   title: Example dropdown menu
+#     #   name: Dropdown
+#     #   weight: 3
+#     # - identifier: dropdown1
+#     #   title: example dropdown 1
+#     #   name: example 1
+#     #   url: /#
+#     #   parent: dropdown
+#     #   weight: 1
+#     # - identifier: dropdown2
+#     #   title: example dropdown 2
+#     #   name: example 2
+#     #   url: /#
+#     #   parent: dropdown
+#     #   weight: 2
+
+params:
+  title: "Szymon's Portfolio"
+  description: "A personal portfolio website built with Hugo Profile theme."
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/fav.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    # defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # When using hex codes for colors, quotations must be used along with the # sign
+  # color:
+  #   textColor: "#343a40"
+  #   secondaryTextColor: "#6c757d"
+  #   textLinkColor: "#007bff"
+  #   backgroundColor: "#eaedf0"
+  #   secondaryBackgroundColor: "#64ffda1a"
+  #   primaryColor: "#007bff"
+  #   secondaryColor: "#f8f9fa"
+
+  #   darkmode:
+  #     textColor: "#e4e6eb"
+  #     secondaryTextColor: "#b0b3b8"
+  #     textLinkColor: "#ffffff"
+  #     backgroundColor: "#18191a"
+  #     secondaryBackgroundColor: "#212529"
+  #     primaryColor: "#ffffff"
+  #     secondaryColor: "#212529"
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Szymon Chirowski" # Brand name for the brand | default is the title variable
+    disableSearch: true
+    # searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Szymon."
+    subtitle: "Machine Learning Developer"
+    content: "AI student who loves building intelligent systems that learn and adapt. Whether it's predicting outcomes, classifying patterns, or detecting anomalies, I create machine learning solutions that make an impact."
+    image: /images/me.jpg
+    bottomImage:
+      enable: false
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: true
+      name: "Resume"
+      url: "/files/Szymon_Chirowski_resume.pdf"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/SoSaymon
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/szymon-chirowski
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    # image: "/images/me.jpg"
+    content: |-
+      I'm an AI & Applied Data Science student at Breda University of Applied Sciences, passionate about building machine learning models that solve problems across different domains. While I currently work on LLM projects as a student assistant at BUAS, I'm most interested in general purpose ML algorithms like classification, regression, and prediction models that can be applied anywhere.
+    
+      I enjoy the versatility of core machine learning techniques that aren't tied to a specific domain. Whether it's training models to classify images, predict time series data, or detect patterns in any type of dataset, I'm drawn to projects where I can experiment with different algorithms and see what works best. I'm particularly interested in exploring computer vision and robotics as new application areas for these techniques.
+    
+      When I'm not coding or training models, you'll find me at the gym, tinkering with hardware projects, or exploring new datasets to experiment with. I believe the best way to understand ML is by applying algorithms to diverse problems and learning from the results.
+    skills:
+      enable: true
+      title: "Technologies I work with:"
+      items:
+        - "Python"
+        - "TensorFlow"
+        - "LangChain"
+        - "PyTorch"
+        - "Pandas & NumPy"
+        - "Docker"
+        - "SQL"
+
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - company: "Breda University of Applied Sciences"
+        companyUrl: "https://buas.nl/en/"
+        jobs:
+          - name: "AI Chatbot Developer"
+            date: "Apr 2025 - present"
+            content: |-
+              Commissioned by the university administration, I led the development of an AI-powered chatbot designed to enhance prospective student engagement and streamline the admissions process.
+
+              Key Responsibilities
+              - End-to-End Product Development: Designed, built, and deployed a conversational AI assistant to support students in program discovery, application tracking, and admissions FAQs.
+              - Dynamic Data Integration: Implemented web scraping and API-based data pipelines to ensure real-time accuracy of chatbot responses based on official university data.
+              - User Experience Design: Engineered inclusive and adaptive conversation flows tailored to various student profiles, including international applicants and those with diverse academic paths.
+              - Stakeholder Collaboration: Conducted requirement-gathering sessions with academic and administrative staff to identify pain points and translate them into technical features.
+            info:
+              content: Working as a Student Assistant developing AI chatbots using LangChain and Ollama.
+            featuredItems:
+              
+
+      - company: "DAGMA IT Security"
+        companyUrl: "https://dagma.eu/en/"
+        jobs:
+          - name: "SOC Trainee"
+            date: "Aug 2023 - Sep 2023"
+            info:
+              content: Summer internship as a Security Operations Center (SOC) trainee at DAGMA IT Security.
+            content: |
+                    Trained in Security Operations Center operations, working with ELK Stack (Elasticsearch, Logstash, Kibana) and SIEM systems for security event monitoring and threat detection. Gained practical experience in log analysis and incident triage workflows.
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "Bachelor of Applied Data Science & Artificial Intelligence"
+        school:
+          name: "Brefa University of Applied Sciences, Breda, The Netherlands"
+          url: "https://buas.nl/en/"
+        date: "2024 - Present (Expected Graduation: 2028)"
+        GPA: "4.0 out of 4.0"
+        content: 
+        featuredLink:
+          enable: false
+          name: ""
+          url: ""
+      - title: "IT Technician - Technical Secondary School"
+        school:
+          name: "Technikum Lotnicze, Katowice, Poland"
+          url: "https://www.technikum.lotnicze.zdz.pl/"
+        date: "2019 - 2024"
+        GPA: "~3.5 out of 4.0 (estimated due to grading system differences)"
+        content: |
+          Completed technical education with focus on IT infrastructure, programming fundamentals, and computer systems. Gained hands-on experience through apprenticeships at local IT firms.
+        
+
+  # Achievements
+  achievements:
+    enable: false
+    # title: "Custom Name"
+    items:
+      - title: Google kickstart runner
+        content: I solved all problems with optimal solution.
+        url: https://example.com
+        image: /images/achievement.jpg
+      - title: Facebook Hackathon Winner
+        content: Developed a product using Artificial Intelligence.
+        image: /images/achievement.jpg
+      - title: Hugo Profile
+        content: Developed a theme and getting 1K+ downloads per month.
+        url: "https://github.com/gurusabarish/hugo-profile"
+        image: /images/achievement.jpg
+      - title: Microsoft Imagine Runner
+        content: We are developed a product which can help others.
+      - title: Google Summer of Code
+        content: Contributed to a open source project.
+        url: https://example.com
+
+  # projects
+  projects:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: Emotion in TV Shows
+        content: Built an NLP pipeline that detects and classifies emotions in TV content. Uses Transformer models (BERT, RoBERTa) to classify emotions across six categories with an F1 score of 0.75.
+        image: /images/projects/emotion.jpg
+        featured:
+          name: View Details
+          link: /projects/emotion-classification/    # ← Links to detail page
+        badges:
+          - "NLP"
+          - "PyTorch"
+          - "Transformers"
+        links:
+          - icon: fa fa-file-pdf
+            url: /files/Emotion-in-TV-Shows.pdf
+          - icon: fab fa-github
+            url: https://github.com/BredaUniversityADSAI/fae2-nlpr-group-group-9/tree/main/src/krzycz_trybson
+
+      - title: 
+          AI Powered Wall Plug Defect Detection System
+        content: Developed a computer vision system for automated quality control in manufacturing. Achieved 100% accuracy using transfer learning with MobileNetV2 and EfficientNetB0, with Explainable AI features for transparency. Comparable to $15,000+ commercial systems while operating at 10% of the cost on low-cost hardware.
+        image: /images/projects/wall-plugs.png
+        featured:
+          name: View Details
+          link: "/projects/wall-plug-detection/"
+        badges:
+          - "Computer Vision"
+          - "TensorFlow"
+          - "Transfer Learning"
+          - "XAI"
+        links:
+          - icon: fa fa-file-pdf
+            url: /files/wall-plugs-final-presentation.pdf
+          - icon: fab fa-github
+            url: https://github.com/BredaUniversityADSAI/2024-25c-fai1-adsai-SzymonChirowski242621/blob/main/Deliverables/deep_learning/Deep-Learning-Szymon_Chirowski_242621.ipynb
+
+      - title: "IKEA Breda POS Terminal Deployment Analytics Dashboard"
+        content: "Built a Power BI dashboard analyzing deployment trends for 500+ POS terminals. Identified patterns in re-deployments, employee performance, and operational gaps. Provided actionable recommendations that improved compliance rates by tracking terminal lifecycle events and detecting deployment inconsistencies."
+        image: /images/projects/ikea.png
+        featured:
+          name: "View Details"
+          link: "/projects/ikea-pos-analytics/"
+        badges:
+          - "Power BI"
+          - "Business Analytics"
+          - "Data Visualization"
+        links:
+          - icon: fa fa-file-pdf
+            url: /files/ikea-powerbi.pdf
+
+  #Contact
+  contact:
+    enable: true
+    title: "Get In Touch"
+    content: "I'm always interested in hearing about new opportunities, research collaborations, or exciting AI projects. Whether you have a question, want to discuss machine learning, or just want to connect—feel free to reach out!"
+    email: "szymon.chirowski@protonmail.com"
+    location: "Breda, Netherlands"  
+    socialLinks:
+      - icon: "fab fa-linkedin"
+        url: "https://linkedin.com/in/szymon-chirowski"
+      - icon: "fab fa-github"
+        url: "https://github.com/SoSaymon"
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+    #   messageRows: 5
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: false
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/SoSaymon
+      linkedin: https://linkedin.com/in/szymon-chirowski
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
