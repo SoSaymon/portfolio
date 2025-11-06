@@ -28,6 +28,8 @@
 {{ template "_internal/opengraph.html" . }}
 {{ template "_internal/twitter_cards.html" . }}
 
+<meta property="og:image" content="{{ if .Params.ogImage }}{{ .Params.ogImage | absURL }}{{ else }}{{ .Site.Params.socialImage | absURL }}{{ end }}">
+
 <!-- stylesheets -->
 {{- if (or (eq .Site.Params.UseBootstrapCDN true) (eq .Site.Params.UseBootstrapCDN "css")) -}}
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
