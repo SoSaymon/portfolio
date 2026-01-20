@@ -60,7 +60,11 @@ This was an **individual project**, completed end-to-end from data exploration a
 * **RL Agent:** Trained a **Soft Actor-Critic (SAC)** agent using **Stable Baselines 3**.
 * **Reward Function:** Dense reward based on negative Euclidean distance, with penalties for collisions and success bonuses.
 
-![Full-pipeline](/images/projects/RL-pipeline.mp4)
+<video controls autoplay loop muted playsinline width="100%">
+  <source src="/images/projects/RL-pipeline.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 
 ### System Integration
 
