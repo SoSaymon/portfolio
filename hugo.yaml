@@ -283,22 +283,20 @@ params:
             url: https://github.com/BredaUniversityADSAI/fae2-nlpr-group-group-9/tree/main/src/krzycz_trybson
 
       - title: 
-          AI Powered Wall Plug Defect Detection System
-        content: Developed a computer vision system for automated quality control in manufacturing. Achieved 100% accuracy using transfer learning with MobileNetV2 and EfficientNetB0, with Explainable AI features for transparency. Comparable to $15,000+ commercial systems while operating at 10% of the cost on low-cost hardware.
-        image: /images/projects/wall-plugs.png
+          Automated Root Phenotyping & Inoculation System
+        content: Automated system that segments plant roots and controls a robot to perform high-precision inoculations, reducing manual processing time 21× while achieving 0.18mm accuracy
+        image: /images/projects/plants.jpg
         featured:
           name: View Details
-          link: "/projects/wall-plug-detection/"
+          link: "/projects/plant-phenotyping/"
         badges:
           - "Computer Vision"
-          - "TensorFlow"
-          - "Transfer Learning"
-          - "XAI"
+          - "PyTorch"
+          - "Reinforcement Learning"
+          - "Experiment Tracking"
         links:
           - icon: fa fa-file-pdf
-            url: /files/wall-plugs-final-presentation.pdf
-          - icon: fab fa-github
-            url: https://github.com/BredaUniversityADSAI/2024-25c-fai1-adsai-SzymonChirowski242621/blob/main/Deliverables/deep_learning/Deep-Learning-Szymon_Chirowski_242621.ipynb
+            url: /files/Presentation-Automated_Root_Phenotyping.pdf
 
       - title: "IKEA Breda POS Terminal Deployment Analytics Dashboard"
         content: "Built a Power BI dashboard analyzing deployment trends for 500+ POS terminals. Identified patterns in re-deployments, employee performance, and operational gaps. Provided actionable recommendations that improved compliance rates by tracking terminal lifecycle events and detecting deployment inconsistencies."
